@@ -5,10 +5,14 @@ const app = express();
 
 app.use(express.static('./public'));
 
+// Rota principal 
 app.get('/', (request, response) => {
     response.sendFile(path.join(__dirname,('./public/index.html')));
 })
 
 const port = 3000;
-app.listen(port);
+app.listen(port, () => {
+    console.log('App running on: http://localhost:' + port)
+});
+
 

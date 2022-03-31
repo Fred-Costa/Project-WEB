@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Página Principal - Frederico </title>
+<style>
+    .menu {
+  width: 200px; /* Set a width if you like */
+}
+
+.menu a {
+  background-color: #eee; /* Grey background color */
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.menu a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.menu a.active {
+  background-color: #04AA6D; /* Add a green color to the "active/current" link */
+  color: white;
+background-color: black;
+}
+</style>
 </head>
 <body>
-    Primeira Pagina HTML
+    
+    <div class="menu">
+        <a href="public/login.html" class="active"> Home </a>
+        <a href="public/addProd.html"> Criar Produto </a>
+        <a href="#"> Apagar Produto </a>
+      </div> 
+
 </body>
 </html>
