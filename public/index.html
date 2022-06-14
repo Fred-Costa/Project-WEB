@@ -6,14 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Página Principal </title>
 </head>
+<style>
+    * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body {
+ font-family: cursive;
+}
+a {
+ text-decoration: none;
+}
+li {
+ list-style: none;
+}
+</style>
 <body>
-    <ul>
-        <li><a href ="home.html" class="active"> Home </a></li>
-        <li><a href ="noticias.html"> Noticías </a></li>
-        <li><a href ="contactos.html"> Contactos </a></li>
-        <li><a href ="sobre.html"> Sobre Nós </a></li>
-    </ul>
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="home.html"> Home </a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"> Notícias </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Contactos </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"> Sobre Nós </a
+                >
+              </li>
+            </ul>
+            <form class="d-flex input-group w-auto">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Type query"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-primary"
+                type="button"
+                data-mdb-ripple-color="dark"
+              >
+                Pesquisa
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
     <center>
     <a href = "home.html"><img src = "media/logo.jpg" width="700px" height="700px"></a>
     </center>
